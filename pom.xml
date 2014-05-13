@@ -20,7 +20,7 @@
         <scala.version>2.10.2</scala.version>
 
         <!-- runtime deps versions -->
-        <mesos.version>0.0.14-SNAPSHOT</mesos.version>
+        <mesos.version>0.14.1</mesos.version>
 
         <!-- test deps versions -->
         <junit.version>4.11</junit.version>
@@ -40,8 +40,10 @@
         <repository>
             <id>mesosphere-aws-public</id>
             <name>Private AWS release repo</name>
-            <url>https://s3.amazonaws.com/mesosphere-maven-public/snapshot/
-            </url>
+            <url>https://s3.amazonaws.com/mesosphere-maven-public/</url>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
         </repository>
         <repository>
             <id>twitter-repo</id>
